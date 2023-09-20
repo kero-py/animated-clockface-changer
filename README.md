@@ -1,2 +1,2 @@
 # animated-clockface-changer
- Clock face changer - animated clock with changeable style using Canvas API (JavaScript) and CSS.
+ Clock face changer - animated clock with changeable style (CSS). Made using Canvas API (JavaScript). Based on a tutorial by Brad Traversy.
