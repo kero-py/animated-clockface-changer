@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Playfair">
+    <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Playfair';
+    }
+
+    h2 {
+        padding-bottom: 30px;
+    }
+
+    h3 {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    canvas{
+        border: 1px solid black;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    input {
+        margin: 0.1rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .face {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .save {
+        align-self: center;
+        padding-bottom: 30px;
+    }
+
+    .form-input {
+        padding-right: 10px;
+    }
+    #save-btn {
+        background-color: #1d81d6;
+        color: white;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 10px;
+    }
+
+    </style>
+    <title>Clockface Changer</title>
+</head>
+<body>
+    <br>
+    <br>
+    <h2>Clock Face Changer</h2>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <div class="wrapper">
+        <h3>Clock Face</h3>
+        <div class="save">
+            <button id="save-btn" type="submit">Save as an image</button>
+        </div>
+        <form>
+            <div class="face">
+                <div class="form-input">
+                    <label for="face-colour">Base colour</label>
+                    <input type="color" value="#ff0800" id="face-colour">
+                </div>
+
+                <div class="form-input">
+                    <label for="border-colour">Border colour</label>
+                    <input type="color" value="#ff0800" id="border-colour">
+                </div>
+
+                <div class="form-input">
+                    <label for="line-colour">Markings colour</label>
+                    <input type="color" value="#ff0800" id="line-colour">
+                </div>
+
+                <div class="form-input">
+                    <label for="hour-colour">Hour hand colour</label>
+                    <input type="color" value="#ff0800" id="hour-colour">
+                </div>
+
+                <div class="form-input">
+                    <label for="minute-colour">Minute hand colour</label>
+                    <input type="color" value="#ff0800" id="minute-colour">
+                </div>
+
+                <div class="form-input">
+                    <label for="second-colour">Second hand colour</label>
+                    <input type="color" value="#ff0800" id="second-colour">
+                </div>
+
+                <div class="form-input">
+                    <label for="dial-colour">Dial colour</label>
+                    <input type="color" value="#ff0800" id="dial-colour">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
